@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configuration SYSTEM "xconf.dtd">
+
+<Configuration targetFile="codebase/ext/xconf/cusproject.properties">
+
+
+   <Service name="com.ptc.core.components.descriptor.DataUtility">
+      <Option serviceClass="ext.plm.project.datautility.CusPlanActivityDataUtility" 
+              requestor="java.lang.Object"
+              selector="CusPlanActivity"
+              cardinality="singleton"/>
+   </Service>
+  
+</Configuration>
+
+xconfmanager -i codebase/ext/xconf/cusproject.xconf -p
